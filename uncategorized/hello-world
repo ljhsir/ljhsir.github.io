@@ -1,130 +1,63 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!doctype html>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="en">
 <head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-  <meta name="renderer" content="webkit">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" , user-scalable="no"">
-  <title>Hello Worldljhsir's blog</title>
-  <link rel="shortcut icon" href>
+  <meta charset="utf-8">
   
+  
+    <meta name="keywords" content="Python Django 爬虫">
+  
+  
+    <meta name="description" content="Life is fantastic~">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    Hello World |
     
-    
-      <link rel="stylesheet" href="/css/bootstrap.min.css">
-    
-      <link rel="stylesheet" href="/css/font-awesome.min.css">
-    
-      <link rel="stylesheet" href="/css/atom-one-dark.css">
-    
-      <link rel="stylesheet" href="/css/jquery.fancybox.css">
-    
-      <link rel="stylesheet" href="/css/nprogress.min.css">
-    
-      <link rel="stylesheet" href="/css/valine.css">
-    
-      <link rel="stylesheet" href="/css/life.css">
-    
+    ljhsir&#39;s blog</title>
   
-
+    <link rel="shortcut icon" href="/favicon.ico">
   
-    <link rel="stylesheet" href="/css/sidebar-light.css">
+  <link rel="stylesheet" href="/css/style.css">
   
-
-  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
   
-  
-  
-    <script src="/js/jquery-2.2.4.min.js"></script>
-  
-    <script src="https://cdn1.lncld.net/static/js/3.1.0/av-min.js"></script>
-  
-    <script src="/js/jquery.pjax.js"></script>
-  
-    <script src="/js/nprogress.min.js"></script>
-  
-    <script src="/js/tether.min.js"></script>
-  
-    <script src="/js/bootstrap.min.js"></script>
-  
-    <script src="/js/highlight.min.js"></script>
-  
-    <script src="/js/highlightjs-line-numbers.min.js"></script>
-  
-    <script src="/js/jquery.fancybox.js"></script>
-  
-    <script src="/js/jquery.qrcode.min.js"></script>
-  
-    <script src="/js/Valine.min.js"></script>
-  
-  
+  <script src="/js/pace.min.js"></script>
 </head>
+</html>
 <body>
-<script>AV.init({appId:'',appKey:''});</script>
-<script type="text/javascript">
-      var config = {
-            ClasS: 'Counter',
-            el:'.views',
-            elP: '.views-post'
-      }
-</script>
-<div class="container">
-    <div class="row blog-box-shadow">
-        <!--博客主栏开始-->
-        <div class="col-xl-9 col-lg-12 blog-main" id="pjax-box">
-            <header class="blog-header">
-                <a href="http://ljhsir.github.io" class="blog-header-mobile-title">ljhsir's blog</a>
-                <a href="javascript:;" class="blog-header-navbar-btn"><i class="fa fa-bars"></i></a>
-                <nav class="blog-header-navbar blog-header-fixed">
-                    <ul class="blog-navbar-links">
-                        
-                          <li class="blog-nav-item"><a href="/" class="transition">首页</a></li>
-                        
-                          <li class="blog-nav-item"><a href="/about/" class="transition">关于</a></li>
-                        
-                          <li class="blog-nav-item"><a href="/links/" class="transition">链接</a></li>
-                        
-                        <div class="blog-navbar-right">
-                            <form action>
-                                <div class="input-group">
-                                    <input type="text" class="blog-header-search" placeholder="search...">
-                                    <buttn type="submit" class="blog-header-search-btn"><i class="fa fa-search"></i></buttn>
-                                </div>
-                            </form>
-                        </div>
-                    </ul>
-                </nav>
-            </header>
-                
-<header class="blog-post-page-title">
-    <h4>Hello World</h4>
-    <time datetime="2019-06-26T06:35:03.316Z"><i class="fa fa-clock-o"></i>2019-06-26</time>
+<main class="content">
+  <section class="outer">
+  <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hello World
+    </h1>
+  
+
+      </header>
     
+
     
+      <div class="article-meta">
+        <a href="/uncategorized/hello-world" class="article-date">
+  <time datetime="2019-06-26T06:35:03.316Z" itemprop="datePublished">2019-06-26</time>
+</a>
+        
+      </div>
     
-	
-    
-</header>
-<div class="blog-main-post blog-post-page-box">
-    <article class="blog-post-block blog-post-page-content">
-        <section>
-            
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+      
+
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
@@ -138,222 +71,134 @@
 
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
-            
-        </section>
-        <footer class="blog-post-page-tags">
-        
-			
-		
-        </footer>
-    </article>
-    <article class="blog-post-page-readmore">
-    	
-    	
-		
-			<a href="/uncategorized/github-hexo搭建博客遇到的问题总结" class="blog-post-page-readmore-prev" data-toggle="tooltip" data-placement="top" title="github-hexo搭建博客遇到的问题总结">上一篇</a>
-		
-
-		
-		
-
-        <div style="clear: both;"></div>
-    </article>
-
-    <article class="blog-post-block blog-post-page-content">
-            <div class="row">
-            
-                <div class="col-md-4 col-sm-4 post-page-more-btn">
-                    <span class="post-comments-btn btn btn-info btn-block" data-toggle="tooltip" data-placement="top" title="本站采用Disqus评论组件，若您没有科学上网可能会无法查看并评论">加载评论</span>
-                </div>
-            
-                <div class="col-md-4 col-sm-4 post-page-more-btn">
-                    <span data-toggle="modal" data-target="#post-donate-content">
-                        <span id="post-donate-btn" class="btn btn-danger btn-block" data-toggle="tooltip" data-placement="top" title="如果您觉得本文还不错或者对您有帮助，可以考虑打赏一下作者哦">打赏本文</span>
-                    </span>
-                </div>
-                <div class="col-md-4 col-sm-4 post-page-more-btn">
-                    <span data-toggle="modal" data-target="#post-qrcode-content">
-                        <span><span id="post-qrcode-btn" class="btn btn-success btn-block" data-toggle="tooltip" data-placement="top" title="微信扫描二维码手机端查看本文及分享本文">二维码</span></span>
-                    </span>
-                </div>
-            </div>
-        <div class="post-more-function-br"></div>
-
-        <div class="modal fade" id="post-donate-content" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">打赏本文</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row post-donate-content">
-                            <div class="col-md-4">
-                                <p>支付宝</p>
-                                <img class="post-donate-content-img no-lightbox" src="http://dl.weic96.cn/logo.png">
-                            </div>
-                            <div class="col-md-4">
-                                <p>微信</p>
-                                <img class="post-donate-content-img no-lightbox" src="http://dl.weic96.cn/logo.png">
-                            </div>
-                            <div class="col-md-4">
-                                <p>财付通</p>
-                                <img class="post-donate-content-img no-lightbox" src>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="post-qrcode-content" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">文章二维码</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row post-qrcode-content">
-                            <span class="post-qrcode-content-canvas"></span>
-                            <img class="post-qrcode-content-img no-lightbox" src>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <script>
-            // post QRcode
-            // 中文转码
-            function toUtf8(str) {
-                var out, i, len, c;
-                out = "";
-                len = str.length;
-                for (i = 0; i < len; i++) {
-                    c = str.charCodeAt(i);
-                    if ((c >= 0x0001) && (c <= 0x007F)) {
-                        out += str.charAt(i);
-                    } else if (c > 0x07FF) {
-                        out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));
-                        out += String.fromCharCode(0x80 | ((c >> 6) & 0x3F));
-                        out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
-                    } else {
-                        out += String.fromCharCode(0xC0 | ((c >> 6) & 0x1F));
-                        out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
-                    }
-                }
-                return out;
-            }
-            // 生成
-            var qrcode= $('.post-qrcode-content-canvas').qrcode({width: 150,height: 150,text: toUtf8("http://ljhsir.github.io/uncategorized/hello-world")}).hide();
-            var canvas=qrcode.find('canvas').get(0);
-            $('.post-qrcode-content-img').attr('src',canvas.toDataURL('image/jpg'));
-        </script>
-
-        
-    </article>
-    
-</div>
-
-                
-            <footer class="blog-footer">
-                <p class="blog-footer-left">Copyright ©  2019 <a href="http://ljhsir.github.io">ljhsir's blog</a></p>
-                <p class="blog-footer-right">Powered by <a href="https://hexo.io" target="_blank">Hexo</a>,Theme <a href="https://note.isweic.com/themes-life/" target="_blank">Life</a></p>
-            </footer>
-        </div><!--博客主栏结束-->
-        <!--博客侧边栏开始-->
-        <div class="col-xl-3 blog-sidebar">
-            <div class="blog-sidebar-title">
-                <a href>ljhsir's blog</a>
-            </div>
-            <div class="blog-sidebar-logo">
-                <img src="my_headpic.png">
-            </div>
-            <div class="blog-sidebar-count blog-sidebar-padding">
-                <div class="blog-sidebar-count-left">
-                    <p class="blog-sidebar-count-p">2</p>
-                    <span class="blog-sidebar-count-span">文章</span>
-                </div>
-                <div class="blog-sidebar-count-right">
-                    <p class="blog-sidebar-count-p">2</p>
-                    <span class="blog-sidebar-count-span">标签</span>
-                </div>
-                <div style="clear: both;"></div>
-            </div>
-            <div class="blog-sidebar-icon blog-sidebar-padding">
-                <ul>
-                    <li><a href="https://github.com/ljhsir" class="icon-github" target="_blank" data-toggle="tooltip" data-placement="top" title="Github"><i class="fa fa-github"></i></a></li>
-                    <li><a href class="icon-weibo" target="_blank" data-toggle="tooltip" data-placement="top" title="新浪微博"><i class="fa fa-weibo"></i></a></li>
-                    <li><a href class="icon-twitter" target="_blank" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                    <!--<li><a href="" class="icon-facebook" target="_blank" data-toggle="tooltip" data-placement="top" title="FaceBook"><i class="fa fa-facebook"></i></a></li>-->
-                    <li><a href="mailto:lijunhuipy@163.com" class="icon-email" data-toggle="tooltip" data-placement="top" title="E-Mail"><i class="fa fa-envelope"></i></a></li>
-                    <li><a href class="icon-rss" data-toggle="tooltip" target="_blank" data-placement="top" title="RSS"><i class="fa fa-rss"></i></a></li>
-                </ul>
-            </div>
-            <div class="blog-sidebar-categories">
-                <h4 class="blog-sidebar-h4"><i class="fa fa-folder-open"></i>&nbsp;文章分类</h4>
-                <ul class="list-group blog-sidebar-padding">
-                  
-                </ul>
-            </div>
-            <div class="blog-sidebar-tags">
-                <h4 class="blog-sidebar-h4"><i class="fa fa-tag"></i>&nbsp;标签云</h4>
-                <ul class="blog-sidebar-tags-ul blog-sidebar-padding">
-                  
-                    
-                      <li><a href="/tags/github/" class="tag-could" data-toggle="tooltip" data-placement="top" title="github">github</a></li>
-                    
-                      <li><a href="/tags/hexo/" class="tag-could" data-toggle="tooltip" data-placement="top" title="hexo">hexo</a></li>
-                    
-                  
-                </ul>
-            </div>
-            <script>
-              // 博客侧栏标签云随机色
-              var tag_cloud = $('.tag-could');
-              tag_cloud.each(function () {
-                  var Cnum = 9;
-                  var Crand = parseInt(Math.random() * Cnum);
-                  $(this).addClass("tag-could" + Crand);
-              })
-            </script>
-            <!--返回顶部按钮-->
-            <div class="retop">
-                <i class="fa fa-angle-up"></i>
-            </div>
-        </div><!--博客侧边栏结束-->
+      
     </div>
+    <footer class="article-footer">
+      <a data-url="http://ljhsir.github.io/uncategorized/hello-world" data-id="cjxdcnfsd0002wonhgngt6iei"
+         class="article-share-link">Share</a>
+      
+    </footer>
+
+  </div>
+
+  
+    
+  <nav class="article-nav">
+    
+      <a href="/uncategorized/github-hexo搭建博客遇到的问题总结" class="article-nav-link">
+        <strong class="article-nav-caption">Newer posts</strong>
+        <div class="article-nav-title">
+          
+            github-hexo搭建博客遇到的问题总结
+          
+        </div>
+      </a>
+    
+    
+  </nav>
+
+
+  
+
+  
+    
+  
+
+</article>
+
+
+
+</section>
+  <footer class="footer">
+  
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+    <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>&copy; 2019 ljhsir&#39;s blog</li>
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>Theme  <a href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+    </ul>
+  </div>
+</footer>
+
+</main>
+<aside class="sidebar">
+  <button class="navbar-toggle"></button>
+
+<nav class="navbar">
+  
+    <div class="logo">
+      <a href="/"><img src="/images/my_headpic.jpg" alt="ljhsir&#39;s blog"></a>
+    </div>
+  
+  <ul class="nav nav-main">
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/">Home</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/archives">Archives</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/categories">Categories</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/tags">tags</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/about">about</a>
+      </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="搜索">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+      <li class="nav-item">
+          <div class="totop" id="totop">
+    <i class="fe fe-rocket"></i>
 </div>
-<script src="/js/LeanStatistics.min.js"></script>
-<script src="/js/Life.js"></script>
-<script type="text/javascript">
-    hljs.initHighlightingOnLoad();
-    hljs.initLineNumbersOnLoad();
-    otherF();
-    LeanStatistics();
-    $(document).pjax('a', '#pjax-box', {fragment:'#pjax-box', timeout:8000}).on('pjax:complete', function() {
-      $('pre code').each(function(i, block){
-        hljs.highlightBlock(block);
-      })
-      $('code.hljs').each(function(i, block) {
-        hljs.lineNumbersBlock(block);
-      });
-      LeanStatistics();
-    }).on('pjax:start', function() { NProgress.start(); }).on('pjax:end',   function() {
-      NProgress.done();
-      otherF();
-    });
-</script>
+      </li>
+    <li class="nav-item">
+      
+    </li>
+  </ul>
+</nav>
+
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+</aside>
+<script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/lazyload.min.js"></script>
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  <script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/ocean.js"></script>
+
 </body>
 </html>
