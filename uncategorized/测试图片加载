@@ -94,20 +94,18 @@
 
 
 
-  <meta name="description" content="这里呢是测试图片的加载！  使用makrdown相对路径   使用标签">
+  <meta name="description" content="这里呢是测试图片的加载！  使用makrdown相对路径  使用标签">
 <meta name="keywords" content="-图片">
 <meta property="og:type" content="article">
 <meta property="og:title" content="测试图片加载">
 <meta property="og:url" content="http://ljhsir.github.io/uncategorized/测试图片加载">
 <meta property="og:site_name" content="ljhsir&#39;s blog">
-<meta property="og:description" content="这里呢是测试图片的加载！  使用makrdown相对路径   使用标签">
+<meta property="og:description" content="这里呢是测试图片的加载！  使用makrdown相对路径  使用标签">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://ljhsir.github.io/uncategorized/测试图片加/girl.jpg">
-<meta property="og:updated_time" content="2019-06-27T08:27:31.500Z">
+<meta property="og:updated_time" content="2019-06-27T11:40:47.026Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="测试图片加载">
-<meta name="twitter:description" content="这里呢是测试图片的加载！  使用makrdown相对路径   使用标签">
-<meta name="twitter:image" content="http://ljhsir.github.io/uncategorized/测试图片加/girl.jpg">
+<meta name="twitter:description" content="这里呢是测试图片的加载！  使用makrdown相对路径  使用标签">
 
 
 
@@ -379,7 +377,7 @@
                 
               
 
-              <time title="创建时间：2019-06-27 16:21:31 / 修改时间：16:27:31" itemprop="dateCreated datePublished" datetime="2019-06-27T16:21:31+08:00">2019-06-27</time>
+              <time title="创建时间：2019-06-27 16:21:31 / 修改时间：19:40:47" itemprop="dateCreated datePublished" datetime="2019-06-27T16:21:31+08:00">2019-06-27</time>
             
 
             
@@ -434,7 +432,6 @@
         <p>这里呢是测试图片的加载！</p>
 <ol>
 <li><p>使用makrdown相对路径</p>
-<p><img src="/uncategorized/测试图片加/girl.jpg" alt="girl"></p>
 </li>
 <li><p>使用标签</p>
 </li>
@@ -820,7 +817,7 @@
 <script>
   function loadCount() {
     var d = document, s = d.createElement('script');
-    s.src = 'https://ljhsir.disqus.com/count.js';
+    s.src = 'https://ljhsir-github-io.disqus.com/count.js';
     s.id = 'dsq-count-scr';
     (d.head || d.body).appendChild(s);
   }
@@ -837,7 +834,7 @@
     };
   function loadComments() {
     var d = document, s = d.createElement('script');
-    s.src = 'https://ljhsir.disqus.com/embed.js';
+    s.src = 'https://ljhsir-github-io.disqus.com/embed.js';
     s.setAttribute('data-timestamp', '' + +new Date());
     (d.head || d.body).appendChild(s);
   }
