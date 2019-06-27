@@ -127,7 +127,7 @@
                 <p>这里呢是测试图片的加载！</p>
 <ol>
 <li><p>使用makrdown相对路径</p>
-<p><img src="%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD/girl.jpg" alt="girl"></p>
+<p><img src="/uncategorized/测试图片加/girl.jpg" alt="girl"></p>
 </li>
 <li><p>使用标签</p>
 </li>
