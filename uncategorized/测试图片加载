@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="ljhsir&#39;s blog">
 <meta property="og:description" content="这里呢是测试图片的加载！  使用makrdown相对路径  使用标签">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-27T11:45:47.045Z">
+<meta property="og:updated_time" content="2019-06-27T12:15:51.534Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="测试图片加载">
 <meta name="twitter:description" content="这里呢是测试图片的加载！  使用makrdown相对路径  使用标签">
@@ -225,7 +225,7 @@
         
         
           
-          <li class="menu-item menu-item-about">
+          <li class="menu-item menu-item-categories">
 
     
     
@@ -234,7 +234,7 @@
 
     
 
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
 
   </li>
         
@@ -257,22 +257,6 @@
         
         
           
-          <li class="menu-item menu-item-categories">
-
-    
-    
-      
-    
-
-    
-
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
-
-  </li>
-        
-        
-        
-          
           <li class="menu-item menu-item-archives">
 
     
@@ -283,6 +267,22 @@
     
 
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
 
   </li>
 
@@ -339,7 +339,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ljh">
       <meta itemprop="description" content="Life is fantastic~">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/my_headpic.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -377,7 +377,7 @@
                 
               
 
-              <time title="创建时间：2019-06-27 16:21:31 / 修改时间：19:45:47" itemprop="dateCreated datePublished" datetime="2019-06-27T16:21:31+08:00">2019-06-27</time>
+              <time title="创建时间：2019-06-27 16:21:31 / 修改时间：20:15:51" itemprop="dateCreated datePublished" datetime="2019-06-27T16:21:31+08:00">2019-06-27</time>
             
 
             
@@ -538,6 +538,8 @@
       <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/my_headpic.jpg" alt="ljh">
             
               <p class="site-author-name" itemprop="name">ljh</p>
               <div class="site-description motion-element" itemprop="description">Life is fantastic~</div>
@@ -817,7 +819,7 @@
 <script>
   function loadCount() {
     var d = document, s = d.createElement('script');
-    s.src = 'https://ljhsir-github-io.disqus.com/count.js';
+    s.src = 'https://ljhsir.disqus.com/count.js';
     s.id = 'dsq-count-scr';
     (d.head || d.body).appendChild(s);
   }
@@ -834,7 +836,7 @@
     };
   function loadComments() {
     var d = document, s = d.createElement('script');
-    s.src = 'https://ljhsir-github-io.disqus.com/embed.js';
+    s.src = 'https://ljhsir.disqus.com/embed.js';
     s.setAttribute('data-timestamp', '' + +new Date());
     (d.head || d.body).appendChild(s);
   }
