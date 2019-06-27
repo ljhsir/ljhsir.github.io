@@ -112,7 +112,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ljhsir.github.io/hexo搭建博客/hexo配置和美化" data-id="cjxee35k40000cknhkk7l7wa0"
+      <a data-url="http://ljhsir.github.io/hexo搭建博客/hexo配置和美化" data-id="cjxeejl8c0000tcnhkbwe94vz"
          class="article-share-link">Share</a>
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo配置/">--hexo配置</a></li></ul>
@@ -123,6 +123,20 @@
 
   
     
+  <nav class="article-nav">
+    
+      <a href="/uncategorized/测试图片加载" class="article-nav-link">
+        <strong class="article-nav-caption">Newer posts</strong>
+        <div class="article-nav-title">
+          
+            测试图片加载
+          
+        </div>
+      </a>
+    
+    
+  </nav>
+
 
   
 
