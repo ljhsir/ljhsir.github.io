@@ -61,7 +61,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ljhsir.github.io/uncategorized/markdown学习笔记" data-id="cjxdcwg58000awonhd66zo7uz"
+      <a data-url="http://ljhsir.github.io/uncategorized/markdown学习笔记" data-id="cjxdeuof10002y8nhbx7df7sp"
          class="article-share-link">Share</a>
       
     </footer>
@@ -159,6 +159,10 @@
 </div>
       </li>
     <li class="nav-item">
+      
+        <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+          <i class="fe fe-feed"></i>
+        </a>
       
     </li>
   </ul>

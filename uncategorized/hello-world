@@ -74,7 +74,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ljhsir.github.io/uncategorized/hello-world" data-id="cjxdcnfsd0002wonhgngt6iei"
+      <a data-url="http://ljhsir.github.io/uncategorized/hello-world" data-id="cjxdeuofe0005y8nh05met5q9"
          class="article-share-link">Share</a>
       
     </footer>
@@ -176,6 +176,10 @@
 </div>
       </li>
     <li class="nav-item">
+      
+        <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+          <i class="fe fe-feed"></i>
+        </a>
       
     </li>
   </ul>
