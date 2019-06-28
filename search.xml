@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[测试图片加载]]></title>
-    <url>%2Funcategorized%2F%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%2F</url>
+    <url>%2F2019%2F06%2F27%2F%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%2F</url>
     <content type="text"><![CDATA[这里呢是测试图片的加载！ 使用makrdown相对路径 使用标签]]></content>
       <tags>
         <tag>-图片</tag>
@@ -10,7 +10,7 @@
   </entry>
   <entry>
     <title><![CDATA[hexo配置和美化]]></title>
-    <url>%2Fhexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%2Fhexo%E9%85%8D%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96%2F</url>
+    <url>%2F2019%2F06%2F27%2Fhexo%E9%85%8D%E7%BD%AE%E5%92%8C%E7%BE%8E%E5%8C%96%2F</url>
     <content type="text"><![CDATA[本系列是我在学习hexo+GitHub搭建博客时总结的一些心得，哎，一步一个坑！！ 第二部分：美化 hexo配置和美化1.站点基本配置12345678# Sitetitle: ljhsir's blogsubtitle: description: Lif is fantastic~keywords: Python Django 爬虫author: ljhlanguage: zh-CNtimezone: Asia/Hong_Kong 2.更换主题可以到主题网站下载喜欢的主题，保存到项目根目录的theme文件夹下。 1theme: ocean 3.增加其他页面列如增加一个关于作者的界面，命令行输入： 1hexo new page about 就会在你的项目路径\source下面生成一个about文件夹 4. 增加一个文章分类1.创建在项目文件夹启动命令行输入： 1hexo new page categories 成功后会提示： 1INFO Created: ~/Documents/blog/source/categories/index.md 根据上面的路径，找到index.md这个文件，打开后默认内容是这样的： 1234---title: 文章分类date: 2017-05-27 13:47:40--- 添加type: &quot;categories&quot;到内容中，添加后是这样的： 12345---title: 文章分类date: 2017-05-27 13:47:40type: "categories"--- 2、文章添加“categories”属性打开需要添加分类的文章，为其添加categories属性。下方的categories: web前端表示添加这篇文章到“web前端”这个分类。注意：hexo一篇文章只能属于一个分类，也就是说如果在“- web前端”下方添加“-xxx”，hexo不会产生两个分类，而是把分类嵌套（即该文章属于 “- web前端”下的 “-xxx ”分类）。 123456---title: jQuery对表单的操作及更多应用date: 2017-05-26 12:12:57categories: - web前端--- 5.给文章增加标签1 生成“标签”页并添加tpye属性打开命令行，进入博客所在文件夹。执行命令 1$ hexo new page tags 成功后会提示： 1INFO Created: ~/Documents/blog/source/tags/index.md 根据上面的路径，找到index.md这个文件，打开后默认内容是这样的： 1234---title: 标签date: 2017-05-27 14:22:08--- 添加type: &quot;tags&quot;到内容中，添加后是这样的： 12345---title: 文章分类date: 2017-05-27 13:47:40type: &quot;tags&quot;--- 保存并关闭文件。 2 给文章添加“tags”属性打开需要添加标签的文章，为其添加tags属性。下方的tags:下方的- jQuery - 表格 - 表单验证就是这篇文章的标签了 12345678910---title: jQuery对表单的操作及更多应用date: 2017-05-26 12:12:57categories: - web前端tags:- jQuery- 表格- 表单验证--- 至此，成功给文章添加分类，点击首页的“标签”可以看到该标签下的所有文章。当然，只有添加了tags: xxx的文章才会被收录到首页的“标签”中。]]></content>
       <categories>
         <category>hexo搭建博客</category>
