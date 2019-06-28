@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[markdown语法总结]]></title>
+    <url>%2F2019%2F06%2F28%2Fmarkdown%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[这里是我在学习过程中总结的markdown语法，来源包括菜鸟教程和我看过的一些视频，但是忘记来源了。喜欢的可以看一下！^_^ [TOC] 1[toc] # 生成目录 标题*1. 使用 = 和 - 标记一级和二级标题 * 1234我是一级标题==========我是二级标题---------- 2. 使用#号标记 一个#号克表示一级标题两个# 可表示二级标题 123# 我是一级标题## 我是二级标题### 我是三级标题 段落格式Markdown 段落没有特殊的格式，直接编写文字就好，段落的换行是使用两个以上空格加上回车。 123456这是一个段落 这是第二段这是一个段落这是第二段 字体Markdown 可以使用以下几种字体： 123456*斜体文本*_斜体文本_**粗体文本**__粗体文本__***粗斜体文本***___粗斜体文本___ 分隔线可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。也可以在星号或是减号中间插入空格。 123456789**** * ******- - ----------- 删除线如果文字要添加删除线，只需要在文字的两端加上两个波浪线 ~~ 即可： 1~~BAIDU.COM~~ 下划线下划线可以通过 HTML 的 标签来实现： 1&lt;u&gt;带下划线文本&lt;/u&gt; 脚注脚注是对文本的补充说明，格式如下： 1[^要注明的文本] 演示： 百度^1 12百度[^1][^1]:国内最大的搜索引擎 列表无序列表 无序列表 无序列表 无序列表 +-*三种符号都可以 有序列表 有序列表 有序列表 有序列表 数字加点就可以 1234567891011### 无序列表* 无序列表+ 无序列表- 无序列表* +-*三种符号都可以### 有序列表1. 有序列表1. 有序列表1. 有序列表1. 数字加点就可以 嵌套列表各级之间符号不同，相隔四个空格，typora快速插入表格 CTRL+t： 云南 昆明 嵩明 … 昭通 巧家 … … 四川 攀枝花 不知道 1234567891011* 云南 + 昆明 - 嵩明 - ... + 昭通 - 巧家 - ... + ...* 四川 - 攀枝花 - 不知道 markdown区块Markdown 区块引用是在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号： 123&gt; 区块引用&gt; 菜鸟教程&gt; 学的不仅是技术更是梦想 演示： 区块引用菜鸟教程学的不仅是技术更是梦想 区块的嵌套另外区块是可以嵌套的，一个 &gt; 符号是最外层，两个 &gt; 符号是第一层嵌套，以此类推退： 123&gt; 最外层&gt; &gt; 第一层嵌套&gt; &gt; &gt; 第二层嵌套 最外层 第一层嵌套 第二层嵌套 区块中使用列表区块中使用列表实例如下： 123456&gt; 区块中使用列表&gt; 1. 第一项&gt; 2. 第二项&gt; + 第一项&gt; + 第二项&gt; + 第三项 显示结果如下： 区块中使用列表 第一项 第二项 第一项 第二项 第三项 列表中使用区块如果要在列表项目内放进区块，那么就需要在 &gt; 前添加四个空格的缩进。 区块中使用列表实例如下： 1234* 第一项 &gt; 第一一 &gt; 第二二* 第二项 显示结果如下： 第一项 第一一第二二 第二项 markdown代码如果是段落上的一个函数或片段的代码可以用反引号把它包起来（`），例如： 1`printf()` 函数 显示结果如下： printf() 函数 代码区块代码区块使用 4 个空格或者一个制表符（Tab 键）或者`包裹一段代码并指定一种语言（好像空格和制表符不支持个人推荐用 最后一种）。1234```markdown$(document).ready(function () &#123;alert(&apos;RUNOOB&apos;); 12345```javascript$(document).ready(function () &#123; alert('RUNOOB');&#125;);``` 实例如下： 123$(document).ready(function () &#123; alert('RUNOOB');&#125;); 链接链接使用方法如下： 链接使用方法如下： 12345[链接名称](链接地址)或者&lt;链接地址&gt; 示例如下： 百度 或者 https://www.baidu.com 高级链接1234567链接也可以用变量来代替，文档末尾附带变量地址：这个链接用 1 作为网址变量 [Google][1]这个链接用 runoob 作为网址变量 [Baidu][baidu]然后在文档的结尾为变量赋值（网址） [1]: http://www.google.com/ [baidu]: http://www.baidu.com/ Google Baidu 图片Markdown 图片语法格式如下（菜鸟教程为例）： 123456789![alt 属性文本](图片地址)![alt 属性文本](图片地址 "可选标题")高级：这个链接用 1 作为网址变量 [RUNOOB][1]然后在文档的结尾位变量赋值（网址）[1]: http://static.runoob.com/images/runoob-logo.png 高级链接展示： Markdown 还没有办法指定图片的高度与宽度，如果你需要的话，你可以使用普通的 标签。 1&lt;img src="http://static.runoob.com/images/runoob-logo.png" width="50%"&gt; 表格Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。 语法格式如下： 1234| 表头 | 表头 || ---- | ---- || 单元格 | 单元格 || 单元格 | 单元格 | 示例: 表头 表头 单元格 单元格 单元格 单元格 我们可以设置表格的对齐方式： -: 设置内容和标题栏居右对齐。 :- 设置内容和标题栏居左对齐。 :-: 设置内容和标题栏居中对齐。 示例: 左对齐 右对齐 居中对齐 单元格 单元格 单元格 单元格 单元格 单元格 着重显示重点 1`重点` 添加表情: kissing;:+表情名; 脚注Markdown 高级技巧支持的 HTML 元素不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。 目前支持的 HTML 元素有：&lt;kdb&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;等 ，如： 1使用 &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;Del&lt;/kbd&gt; 重启电脑 转义Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符： 12**文本加粗** \*\* 正常显示星号 \*\* 公式当你需要在编辑器中插入数学公式时，可以使用两个美元符 $$ 包裹 TeX 或 LaTeX 格式的数学公式来实现。提交后，问答和文章页会根据需要加载 Mathjax 对数学公式进行渲染。如： 12345678$$\mathbf&#123;V&#125;_1 \times \mathbf&#123;V&#125;_2 = \begin&#123;vmatrix&#125; \mathbf&#123;i&#125; &amp; \mathbf&#123;j&#125; &amp; \mathbf&#123;k&#125; \\\frac&#123;\partial X&#125;&#123;\partial u&#125; &amp; \frac&#123;\partial Y&#125;&#123;\partial u&#125; &amp; 0 \\\frac&#123;\partial X&#125;&#123;\partial v&#125; &amp; \frac&#123;\partial Y&#125;&#123;\partial v&#125; &amp; 0 \\\end&#123;vmatrix&#125;$$tep1&#125;&#123;\style&#123;visibility:hidden&#125;&#123;(x+1)(x+1)&#125;&#125;$$ 输出结果为：$$\mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix}\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\frac{\partial X}{\partial u} &amp; \frac{\partial Y}{\partial u} &amp; 0 \\frac{\partial X}{\partial v} &amp; \frac{\partial Y}{\partial v} &amp; 0 \\end{vmatrix}$$]]></content>
+      <categories>
+        <category>学习总结</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[测试图片加载]]></title>
     <url>%2F2019%2F06%2F27%2F%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%2F</url>
-    <content type="text"><![CDATA[这里呢是测试图片的加载！ 使用makrdown相对路径 使用标签]]></content>
+    <content type="text"><![CDATA[这里呢是测试图片的加载！做了两种方法实现hexo能在页面里使用文件。 首先得在项目的根目录的_config.yml配置文件里改为post_asset_folder: true。这个是开启资源文件夹，在使用new命令创建一篇新的文章时会生成一个title相同的文件夹，然后就可以使用相对路径引用里面的图片啦！下面是示例： 使用makrdown相对路径 1![girl](图片相对路径) 使用标签 1&lt;img src="图片相对路径" girl&gt;]]></content>
+      <categories>
+        <category>hexo搭建博客</category>
+      </categories>
       <tags>
-        <tag>-图片</tag>
+        <tag>-hexo配置</tag>
       </tags>
   </entry>
   <entry>
@@ -16,7 +30,7 @@
         <category>hexo搭建博客</category>
       </categories>
       <tags>
-        <tag>-hexo配置</tag>
+        <tag>hexo配置</tag>
       </tags>
   </entry>
 </search>
