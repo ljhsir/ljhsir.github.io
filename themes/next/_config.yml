@@ -622,7 +622,7 @@ disqusjs:
 
 # Changyan
 changyan:
-  enable: false
+  enable: true
   appid: cyuj2jnrd
   appkey: 5642c9487feb562343bbdfd8f6cd4874
 

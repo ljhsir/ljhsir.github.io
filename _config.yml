@@ -82,5 +82,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/ljhsir/ljhsir.github.io.git
+  repo: #https://github.com/ljhsir/ljhsir.github.io.git
+    github: https://github.com/ljhsir/ljhsir.github.io.git
+    coding: https://dev.tencent.com/u/ljhsir/p/ljhsir.coding.me/git
   branch: master
