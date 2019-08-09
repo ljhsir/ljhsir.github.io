@@ -94,18 +94,18 @@
 
 
 
-  <meta name="description" content="一、简介Flask是基于python开发的一个基于MVC设计模式的、微内核的web开发框架。它小巧轻量特别适合于各种小型项目和有意从事python web开发的新手。当然，它应对大型项目也不在话下。 Flask有着丰富的扩展，它本身只依赖两个外部库jinjia2模板引擎以及WerkzeugWSGI工具集。因此有ORM或者表单之类需求的可以根据需求自己增加扩展。中文文档">
-<meta name="keywords" content="web框架">
+  <meta name="description" content="一、路由1、什么是路由？在入门篇中我们已经实现了一个最小的Flask应用，当我们访问到http://127.0.0.1:5000/ 时页面就会显示出我们在hello()返回的“Hello World！”。像在这个应用中的route(&amp;quot;/&amp;quot;)装饰器将一个方法绑定到某一个指定的URL上就叫做路由。 2、路由变量规则在URL中可以添加变量，&amp;lt;variable_name&amp;gt;标">
+<meta name="keywords" content="路由 HTTP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="flask学习笔记一（入门篇）">
-<meta property="og:url" content="http://ljhsir.github.io/2019/08/06/flask学习笔记一（入门篇）/index.html">
+<meta property="og:title" content="Flask学习笔记二（路由与HTTP请求篇）">
+<meta property="og:url" content="http://ljhsir.github.io/2019/08/09/Flask学习笔记二（路由与HTTP请求篇）/index.html">
 <meta property="og:site_name" content="ljhsir&#39;s blog">
-<meta property="og:description" content="一、简介Flask是基于python开发的一个基于MVC设计模式的、微内核的web开发框架。它小巧轻量特别适合于各种小型项目和有意从事python web开发的新手。当然，它应对大型项目也不在话下。 Flask有着丰富的扩展，它本身只依赖两个外部库jinjia2模板引擎以及WerkzeugWSGI工具集。因此有ORM或者表单之类需求的可以根据需求自己增加扩展。中文文档">
+<meta property="og:description" content="一、路由1、什么是路由？在入门篇中我们已经实现了一个最小的Flask应用，当我们访问到http://127.0.0.1:5000/ 时页面就会显示出我们在hello()返回的“Hello World！”。像在这个应用中的route(&amp;quot;/&amp;quot;)装饰器将一个方法绑定到某一个指定的URL上就叫做路由。 2、路由变量规则在URL中可以添加变量，&amp;lt;variable_name&amp;gt;标">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-06T03:00:04.899Z">
+<meta property="og:updated_time" content="2019-08-09T08:02:49.300Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="flask学习笔记一（入门篇）">
-<meta name="twitter:description" content="一、简介Flask是基于python开发的一个基于MVC设计模式的、微内核的web开发框架。它小巧轻量特别适合于各种小型项目和有意从事python web开发的新手。当然，它应对大型项目也不在话下。 Flask有着丰富的扩展，它本身只依赖两个外部库jinjia2模板引擎以及WerkzeugWSGI工具集。因此有ORM或者表单之类需求的可以根据需求自己增加扩展。中文文档">
+<meta name="twitter:title" content="Flask学习笔记二（路由与HTTP请求篇）">
+<meta name="twitter:description" content="一、路由1、什么是路由？在入门篇中我们已经实现了一个最小的Flask应用，当我们访问到http://127.0.0.1:5000/ 时页面就会显示出我们在hello()返回的“Hello World！”。像在这个应用中的route(&amp;quot;/&amp;quot;)装饰器将一个方法绑定到某一个指定的URL上就叫做路由。 2、路由变量规则在URL中可以添加变量，&amp;lt;variable_name&amp;gt;标">
 
 
 
@@ -113,7 +113,7 @@
 
   
   
-  <link rel="canonical" href="http://ljhsir.github.io/2019/08/06/flask学习笔记一（入门篇）/">
+  <link rel="canonical" href="http://ljhsir.github.io/2019/08/09/Flask学习笔记二（路由与HTTP请求篇）/">
 
 
 
@@ -123,7 +123,7 @@
   };
 </script>
 
-  <title>flask学习笔记一（入门篇） | ljhsir's blog</title>
+  <title>Flask学习笔记二（路由与HTTP请求篇） | ljhsir's blog</title>
   
 
 
@@ -341,7 +341,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ljhsir.github.io/2019/08/06/flask学习笔记一（入门篇）/">
+    <link itemprop="mainEntityOfPage" href="http://ljhsir.github.io/2019/08/09/Flask学习笔记二（路由与HTTP请求篇）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="晓月残风">
@@ -358,7 +358,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">flask学习笔记一（入门篇）
+          <h1 class="post-title" itemprop="name headline">Flask学习笔记二（路由与HTTP请求篇）
 
               
             
@@ -384,7 +384,7 @@
                 
               
 
-              <time title="创建时间：2019-08-06 10:50:31 / 修改时间：11:00:04" itemprop="dateCreated datePublished" datetime="2019-08-06T10:50:31+08:00">2019-08-06</time>
+              <time title="创建时间：2019-08-09 16:01:23 / 修改时间：16:02:49" itemprop="dateCreated datePublished" datetime="2019-08-09T16:01:23+08:00">2019-08-09</time>
             
 
             
@@ -426,8 +426,8 @@
             
               
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/08/06/flask学习笔记一（入门篇）/#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2019/08/06/flask学习笔记一（入门篇）/" itemprop="commentCount"></span>
+                <a href="/2019/08/09/Flask学习笔记二（路由与HTTP请求篇）/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2019/08/09/Flask学习笔记二（路由与HTTP请求篇）/" itemprop="commentCount"></span>
                 </a>
               
             
@@ -462,36 +462,58 @@
       
 
       
-        <h2 id="一、简介"><a href="#一、简介" class="headerlink" title="一、简介"></a>一、简介</h2><p><strong>Flask</strong>是基于python开发的一个基于<strong>MVC</strong>设计模式的、<strong>微</strong>内核的web开发框架。它小巧轻量特别适合于各种小型项目和有意从事python web开发的新手。当然，它应对大型项目也不在话下。</p>
-<p>Flask有着丰富的扩展，它本身只依赖两个外部库<code>jinjia2</code>模板引擎以及<code>Werkzeug</code>WSGI工具集。因此有ORM或者表单之类需求的可以根据需求自己增加扩展。<a href="http://docs.jinkan.org/docs/flask/" target="_blank" rel="noopener">中文文档</a></p>
-<a id="more"></a>
+        <h2 id="一、路由"><a href="#一、路由" class="headerlink" title="一、路由"></a>一、路由</h2><h3 id="1、什么是路由？"><a href="#1、什么是路由？" class="headerlink" title="1、什么是路由？"></a>1、什么是路由？</h3><p>在<a href="https://www.jianshu.com/p/26b7b222d326" target="_blank" rel="noopener">入门篇</a>中我们已经实现了一个最小的Flask应用，当我们访问到<a href="http://127.0.0.1:5000/" target="_blank" rel="noopener">http://127.0.0.1:5000/</a> 时页面就会显示出我们在<code>hello()</code>返回的“Hello World！”。像在这个应用中的<code>route(&quot;/&quot;)</code>装饰器将一个方法绑定到某一个指定的URL上就叫做<strong>路由</strong>。</p>
+<h3 id="2、路由变量规则"><a href="#2、路由变量规则" class="headerlink" title="2、路由变量规则"></a>2、路由变量规则</h3><p>在URL中可以添加变量，<code>&lt;variable_name&gt;</code>标记变量的名字， 可以作为命名参数传递到视图函数中使用。可根据规则<code>&lt;converter:variable_name&gt;</code>来指定一个可选的转换器。如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@app.route("/&lt;name&gt;/")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_name</span><span class="params">(name)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">"名字是：%s"</span> % name</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route("/&lt;int:age&gt;/")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_age</span><span class="params">(age)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">"年龄是：%d"</span> % age</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route("/&lt;float:height&gt;/")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_height</span><span class="params">(height)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">"身高是：%s"</span> % height</span><br></pre></td></tr></table></figure>
 
-<h2 id="二、开始Flask项目"><a href="#二、开始Flask项目" class="headerlink" title="二、开始Flask项目"></a>二、开始Flask项目</h2><h3 id="1、安装"><a href="#1、安装" class="headerlink" title="1、安装"></a>1、安装</h3><p>安装了python环境（python2.6或更高版本）并且有pip或者easy_install包管理工具的可以直接在命令行输入：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install flask</span><br></pre></td></tr></table></figure>
+<p>支持的转换器有：</p>
+<table>
+<thead>
+<tr>
+<th align="center">数据类型</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">int</td>
+<td>整型变量</td>
+</tr>
+<tr>
+<td align="center">float</td>
+<td>整型或浮点型变量</td>
+</tr>
+<tr>
+<td align="center">path</td>
+<td>和默认的相似，但也接受斜线</td>
+</tr>
+</tbody></table>
+<p><strong>规范的URL在末尾带有”/“</strong>。如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">app.route(<span class="string">"/home/"</span>)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">"in home!"</span></span><br><span class="line"></span><br><span class="line">app.route(<span class="string">"/outside"</span>)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">"outside!"</span></span><br></pre></td></tr></table></figure>
 
-<p>或</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">easy_install flask</span><br></pre></td></tr></table></figure>
+<p>如果在浏览器中输入”<a href="http://127.0.0.1:5000/home“或者”http://127.0.0.1:5000/home/“你都可以看到输出”in" target="_blank" rel="noopener">http://127.0.0.1:5000/home“或者”http://127.0.0.1:5000/home/“你都可以看到输出”in</a> home！“；</p>
+<p>当在浏览器中输入”<a href="http://127.0.0.1:5000/outside“你可以看到”outside“，但是输入”http://127.0.0.1:5000/outside/“你可能就会看到”404“；" target="_blank" rel="noopener">http://127.0.0.1:5000/outside“你可以看到”outside“，但是输入”http://127.0.0.1:5000/outside/“你可能就会看到”404“；</a></p>
+<h3 id="3、构造URL"><a href="#3、构造URL" class="headerlink" title="3、构造URL"></a>3、构造URL</h3><p><code>url_for()</code>方法可以构造一个url。该方法的第一个参数是<code>str</code>类型，是一个试图函数名， 后面可添加在url中声名的命名参数，或者get请求的其他参数。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> url_for</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route("/hello/")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">(height)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">"hello"</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route("/yourname/&lt;name&gt;/")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_name</span><span class="params">(name)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">"名字是：%s"</span> % name</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route("/yourage/")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_age</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">"年龄是：%s"</span> % request.args.get(<span class="string">"age"</span>, <span class="string">"18"</span>)</span><br><span class="line"></span><br><span class="line">print(url_for(<span class="string">'hello'</span>))</span><br><span class="line">print(url_for(<span class="string">'print_name'</span>, name=<span class="string">"Mike"</span>))</span><br><span class="line">print(utl_for(<span class="string">'print_age'</span>, age=<span class="number">20</span>))</span><br></pre></td></tr></table></figure>
 
-<h3 id="2、最小的flask应用"><a href="#2、最小的flask应用" class="headerlink" title="2、最小的flask应用"></a>2、最小的flask应用</h3><p>新建一个python文件（如：hello.py， 不能为flask.py，原因后面再讲），在文件中写入以下代码：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask</span><br><span class="line"></span><br><span class="line">app = Flask(__name__)</span><br><span class="line"><span class="meta">@app.route("/")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Hello World!"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    app.run()</span><br></pre></td></tr></table></figure>
-
-<p>然后执行<code>python hello.py</code>，在浏览器访问<a href="http://127.0.0.1:5000/" target="_blank" rel="noopener">http://127.0.0.1:5000/</a> 就可以看到 Hello World!，表示你已经完成了一个最简单的Flask应用。</p>
-<h3 id="3、代码详解"><a href="#3、代码详解" class="headerlink" title="3、代码详解"></a>3、代码详解</h3><ol>
-<li><code>from flask import Flask</code>在这里从flask包里导入了Flask类， 该类的实例是我们的WSGI（Web Server Gateway Interface Web服务网关接口）应用程序。</li>
-<li><code>app = Flask(__name__)</code> 这里是创建了一个Flask的实例， Flask的第一个参数必须是你创建的应用模块或者包的名称。所以你应该传入<code>__name__</code>。</li>
-<li><code>@app.route(&quot;/&quot;)</code>这里是使用了route()装饰器将url和视图函数连接起来，即在什么样的URL下触发哪一个视图函数。如该例中， 我们的地址是127.0.0.1:5000，当在浏览器访问到<a href="http://127.0.0.1:5000/" target="_blank" rel="noopener">http://127.0.0.1:5000/</a> 是就会触发 hello()执行相关操作。</li>
-<li><code>app.run()</code>这条语句是运行这个应用， <code>if __name__ == &quot;__main__&quot;:</code>这条语句判断了是这个文件或者包是否是主程序的入口，还是作为一个包导入，类似于c语言的<code>int main()</code>。</li>
+<p><strong>优点</strong>：</p>
+<ol>
+<li>描述性好，修改方便；</li>
+<li>转义特殊字符和Unicode数据；</li>
+<li>方便处理复杂的路由关系；</li>
 </ol>
-<h3 id="4、调试模式"><a href="#4、调试模式" class="headerlink" title="4、调试模式"></a>4、调试模式</h3><p>在上例中我们已经运行起来了这个最小的应用， 但是敲代码粗心的同学可能会发现，要是某个地方出错了，还得把它<code>ctrl+c</code>重启服务一下， 这样就很麻烦，不符合python优雅的风格，但是你别担心，Flask完全考虑到了。</p>
-<p>你可以在hello.py中启动<strong>调试模式</strong>，这样每次代码保存修改后，可以自动重新载入，而且发生错误时会有相关的信息让你debug。</p>
-<p><strong>方法一：</strong>在应用对象上设置</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">app.debug = <span class="literal">True</span></span><br><span class="line">app.run()</span><br></pre></td></tr></table></figure>
+<h2 id="二、HTTP方法"><a href="#二、HTTP方法" class="headerlink" title="二、HTTP方法"></a>二、HTTP方法</h2><p>HTTP方法（”谓词”），常见的有：</p>
+<ul>
+<li><strong>GET</strong>：获取页面信息，通过<code>?参数名=值&amp;参数名=值...</code>传递数据；</li>
+<li><strong>POST</strong>：通常是html通过表单给服务器传数据的方法；</li>
+<li><strong>HEAD</strong>：获取消息头；</li>
+<li><strong>PUT</strong>：与POST类似，但是服务器可能触发了存储过程多次，多次覆盖掉旧值。</li>
+<li><strong>DELETE</strong>：删除给定位置的信息；</li>
+<li><strong>OPTIONS</strong>：给客户端提供一个敏捷的途径来弄清这个 URL 支持哪些 HTTP 方法。</li>
+</ul>
+<p>可以在<code>route(&#39;/&#39;,methods=[])</code>methods中指定允许的请求方法。默认为“GET”方法。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@app.route('/', methods=["GET", "POST"])</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
 
-<p><strong>方法二：</strong>作为参数传递给run()方法</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.run(debug=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-
-<p>在部署到生产环境上时建议关掉调试模式。</p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>刚学完Flask开发一个微电影应用，觉得有些地方不是很清楚，而且写过的有些东西记忆有些模糊了，参考官方文档整理了一下，加油吧。</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>继续整理，如有错误之处还请多多指教！(oﾟvﾟ)ノ</p>
 
       
     </div>
@@ -518,7 +540,7 @@
         
         <div class="post-tags">
           
-            <a href="/tags/web框架/" rel="tag"># web框架</a>
+            <a href="/tags/路由-HTTP/" rel="tag"># 路由 HTTP</a>
           
         </div>
       
@@ -531,8 +553,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/03/python-装饰器/" rel="next" title="python 装饰器">
-                <i class="fa fa-chevron-left"></i> python 装饰器
+              <a href="/2019/08/06/flask学习笔记一（入门篇）/" rel="next" title="flask学习笔记一（入门篇）">
+                <i class="fa fa-chevron-left"></i> flask学习笔记一（入门篇）
               </a>
             
           </div>
@@ -540,10 +562,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/08/09/Flask学习笔记二（路由与HTTP请求篇）/" rel="prev" title="Flask学习笔记二（路由与HTTP请求篇）">
-                Flask学习笔记二（路由与HTTP请求篇） <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -735,7 +753,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、简介"><span class="nav-text">一、简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、开始Flask项目"><span class="nav-text">二、开始Flask项目</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、安装"><span class="nav-text">1、安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、最小的flask应用"><span class="nav-text">2、最小的flask应用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、代码详解"><span class="nav-text">3、代码详解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、调试模式"><span class="nav-text">4、调试模式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后记"><span class="nav-text">后记</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、路由"><span class="nav-text">一、路由</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、什么是路由？"><span class="nav-text">1、什么是路由？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、路由变量规则"><span class="nav-text">2、路由变量规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、构造URL"><span class="nav-text">3、构造URL</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、HTTP方法"><span class="nav-text">二、HTTP方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后记"><span class="nav-text">后记</span></a></li></ol></div>
             
 
           </div>
